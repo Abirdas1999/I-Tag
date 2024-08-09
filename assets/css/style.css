@@ -617,7 +617,7 @@ p {
 }
 
 .default-padding {
-	padding-top: 120px;
+	padding-top: 60px;
 	padding-bottom: 120px;
 }
 
@@ -11449,7 +11449,7 @@ ul.link-list li a {
 	position: relative;
 }
 
-.gixus-preloader .animation-preloader::after {
+/* .gixus-preloader .animation-preloader::after {
     position: absolute;
     left: 50%;
     top: 30px;
@@ -11461,7 +11461,7 @@ ul.link-list li a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-}
+} */
 
 .gixus-preloader .animation-preloader .spinner {
 	-webkit-animation: spinner 1s infinite linear;
