@@ -4298,7 +4298,9 @@ ul.list-style-one li::after {
     # Partner Style Two
 =================================================================== */
 .partner-style-one-item {
-	background: #2c3947;
+	/* background: #2c3947; */
+	/* background-image: url(/assets/img/Services/design-home1.jpg); */
+	/* background-color: rgba(0, 0, 0, 0.458); */
 	padding: 50px;
 	height: 300px;
 	display: flex;
@@ -4306,6 +4308,10 @@ ul.list-style-one li::after {
 	justify-content: center;
 	border-radius: 10px;
 }
+
+/* .partner-style-one div:nth-child(1) {
+	background: red;
+  } */
 
 .partner-style-one {
 	padding: 5px;
@@ -9234,13 +9240,11 @@ ul.link-list li a {
 	}
 
 	.partner-style-one-item {
-		padding: 30px 0;
-		height: 240px;
+		padding: 0 0;
+		/* background-image: url(/assets/img/Services/design-home1.jpg); */
 	}
 
-	.partner-style-one-item img {
-		max-height: 30px;
-	}
+	
 
 	.partner-style-one-item.bg-theme {
 		padding: 30px 50px;
@@ -11449,19 +11453,19 @@ ul.link-list li a {
 	position: relative;
 }
 
-/* .gixus-preloader .animation-preloader::after {
+.gixus-preloader .animation-preloader::after {
     position: absolute;
     left: 50%;
     top: 30px;
     content: "";
     height: 50px;
     width: 50px;
-    background: url(../img/logo-icon.png);
+    background: url(../img/iTag\ Icon.png);
     transform: translateX(-50%);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-} */
+}
 
 .gixus-preloader .animation-preloader .spinner {
 	-webkit-animation: spinner 1s infinite linear;
