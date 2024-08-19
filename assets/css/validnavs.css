@@ -242,9 +242,10 @@ Version: 1.0
 	padding: 13px 40px !important;
 	border-radius: 5px;
 	font-size: 16px;
-	color: var(--white);
+	/* color: var(--white); */
+	color: #02050b97;
 	border: none;
-	background: var(--color-primary);
+	background: rgb(226, 190, 10);
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
@@ -280,7 +281,7 @@ Version: 1.0
 	height: 150px;
 	width: 115%;
 	z-index: -1;
-	background-color: var(--dark);
+	background: rgba(196, 171, 46, 0.815);
 	-webkit-transition: all 0.25s ease-in-out;
 	transition: all 0.25s ease-in-out;
 	-webkit-transform: translateY(-45%) skew(25deg) scale(0);
