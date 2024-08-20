@@ -262,6 +262,36 @@
                         return false;
                     });
 
+                    $(document).ready(function() {
+                        // Handle inner dropdown toggle
+                        $('.dropdown-toggle-inner').on('click', function(e) {
+                            e.preventDefault();
+                            e.stopPropagation(); // Prevent the event from bubbling up to the document level
+                    
+                            var $this = $(this);
+                            var $submenu = $this.next('.dropdown-menu');
+                    
+                            if ($submenu.is(':visible')) {
+                                $submenu.slideUp();
+                            } else {
+                                $('.dropdown-menu .dropdown-menu').slideUp(); // Close other submenus
+                                $submenu.slideDown();
+                            }
+                        });
+                    
+                        // Prevent the outer dropdown from closing when clicking inside the inner dropdown
+                        $('.dropdown-menu').on('click', function(e) {
+                            e.stopPropagation();
+                        });
+                    
+                        // Close the menu if clicked outside
+                        $(document).on('click', function (e) {
+                            if (!$('.dropdown').is(e.target) && $('.dropdown').has(e.target).length === 0 && $('.open').has(e.target).length === 0) {
+                                $('.dropdown-menu .dropdown-menu').slideUp();
+                            }
+                        });
+                    });
+
                     // Megamenu style
                     $(".megamenu-fw", this).each(function() {
                         $(".col-menu", this).each(function() {
@@ -368,6 +398,12 @@
                         $('.navbar-collapse').removeClass("hide_menu");
                     });
                 });
+
+
+                ////ex
+                
+
+                ////ex
 
 
                 // Navbar Sidebar
